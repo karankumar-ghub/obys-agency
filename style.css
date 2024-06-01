@@ -9,10 +9,21 @@ html , body{
     width: 100%;
 }
 
+#crsr{
+    width: 4vw;
+    height: 4vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+    mix-blend-mode: difference;
+    }
 
 #main{
     background-color: #101010;
 }
+
 
 #page1{
     height: 100vh;
@@ -28,7 +39,6 @@ html , body{
     padding-left: 15vw;
     background-color: #101010;
     z-index: 2;
-
 }
 
 .line{
@@ -68,7 +78,7 @@ font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
     text-align: left;
     animation-iteration-count: infinite;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     opacity: 0;
 }
 
@@ -102,3 +112,62 @@ font-family: 'Times New Roman', Times, serif;
         color: transparent;
     }
 }
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5vw 4vw;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.hero-text{
+    width: 70%;
+    margin-left: 30%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 15;
+    line-height: 14.5 vh;
+    
+
+}
+
+.hero-text:nth-child(2){
+    margin-top: 6vh;
+}
+
+.hero-text h1{
+    font-size: 6.8vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+#hero3 h2 span{
+    display: block;
+    font-size: 6.8vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all ease-out 0.2s;
+    border-bottom: 0.3vw solid #fff;
+    
+}
+
+
+
+    #hero3 h2 span:hover{
+        
+        -webkit-text-stroke: 1px #fff;
+        font-weight: 500;
+        color: transparent; 
+        border: none
+ }
